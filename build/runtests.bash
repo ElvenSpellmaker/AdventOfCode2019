@@ -1,17 +1,19 @@
 #!/bin/bash
 
-FILES="$(find ../ -name 'd*.php')"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+FILES="$(find "$DIR/../" -regextype sed -regex '.*/d[[:digit:]]\+p[[:digit:]]\+\.php')"
 
 exitCode=0
 
 while read -r file; do
-	DAY="${file:3}"
-	EXPECTED_FILE="${DAY%.php}.txt"
+	DAY_NAME="$(basename "$file")"
+	EXPECTED_FILE="${DAY_NAME%.php}.txt"
 
 	ACTUAL="$(php $file)"
-	EXPECTED="$(<"$EXPECTED_FILE")"
+	EXPECTED="$(<"$DIR/$EXPECTED_FILE")"
 
-	echo -n "$DAY: "
+	echo -n "$DAY_NAME: "
 	if [ "$EXPECTED" == "$ACTUAL" ]; then
 		echo -e "\e[0;32mPASS\e[0m"
 	else
