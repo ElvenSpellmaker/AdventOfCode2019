@@ -1,7 +1,6 @@
 <?php
 
-$modules = explode("\n", file_get_contents('d1.txt'));
-array_pop($modules);
+$modules = explode("\n", rtrim(file_get_contents('d1.txt')));
 
 function fuel_summer($initial, $module)
 {
@@ -17,8 +16,8 @@ function fuel_summer($initial, $module)
 
 $sum = array_reduce(
 	$modules,
-	function($carry, $item) { return $carry + fuel_summer(0, $item); },
+	function ($carry, $item) { return $carry + fuel_summer(0, $item); },
 	0,
 );
 
-echo $sum;
+echo $sum, "\n";

@@ -128,4 +128,4 @@ foreach ($matches as [, $direction, $amount])
 	}
 }
 
-echo $minSteps;
+echo $minSteps, "\n";

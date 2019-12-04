@@ -2,9 +2,7 @@
 
 $commands = explode(',', rtrim(file_get_contents('d2.txt')));
 
-
 $origCommands = $commands;
-
 $output = 0;
 $i1 = 1;
 $i2 = 1;
@@ -62,7 +60,7 @@ while(true)
 
 	if ($i2 === 99)
 	{
-		echo "Hrm 100,100 and no answer...\n";
+		echo "Hrm 99,99 and no answer...\n";
 		exit;
 	}
 

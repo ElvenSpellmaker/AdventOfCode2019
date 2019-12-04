@@ -1,12 +1,10 @@
 <?php
 
-$modules = explode("\n", file_get_contents('d1.txt'));
-array_pop($modules);
-
+$modules = explode("\n", rtrim(file_get_contents('d1.txt')));
 
 $sum = array_reduce(
 	$modules,
-	function($carry, $module) {
+	function ($carry, $module) {
 		$mass = floor($module / 3) - 2;
 
 		return $carry + $mass;
@@ -14,4 +12,4 @@ $sum = array_reduce(
 	0,
 );
 
-echo $sum;
+echo $sum, "\n";

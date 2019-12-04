@@ -29,4 +29,4 @@ while (in_array($commands[$pos], [1, 2, '1', '2']))
 	$pos += 4;
 }
 
-echo $commands[0];
+echo $commands[0], "\n";
