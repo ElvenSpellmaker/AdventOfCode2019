@@ -1,6 +1,6 @@
 <?php
 
-$commands = explode(',', rtrim(file_get_contents('d2.txt')));
+$commands = explode(',', rtrim(file_get_contents(__DIR__ . '/d2.txt')));
 
 $origCommands = $commands;
 $output = 0;

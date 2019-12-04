@@ -1,6 +1,6 @@
 <?php
 
-$modules = explode("\n", rtrim(file_get_contents('d1.txt')));
+$modules = explode("\n", rtrim(file_get_contents(__DIR__ . '/d1.txt')));
 
 function fuel_summer($initial, $module)
 {

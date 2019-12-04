@@ -1,6 +1,6 @@
 <?php
 
-$wires = explode("\n", rtrim(file_get_contents('d3.txt')));
+$wires = explode("\n", rtrim(file_get_contents(__DIR__ . '/d3.txt')));
 
 $positions = [];
 
