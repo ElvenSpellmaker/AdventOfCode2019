@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bb760fc46033e4f5a6b1c75d05ca7335",
+    "packages": [
+        {
+            "name": "elvenspellmaker/pipesys",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ElvenSpellmaker/PipeSys.git",
+                "reference": "dfc2cab8fd77e1cad520a85e7bb33647c7c79b91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ElvenSpellmaker/PipeSys/zipball/dfc2cab8fd77e1cad520a85e7bb33647c7c79b91",
+                "reference": "dfc2cab8fd77e1cad520a85e7bb33647c7c79b91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpdocumentor/reflection-docblock": "3.3.2",
+                "ve-interactive/php-mess-detector": "2.0.0",
+                "ve-interactive/php-sniffer-rules": "1.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Blower",
+                    "email": "Jack@elvenspellmaker.co.uk",
+                    "homepage": "https://github.com/ElvenSpellmaker"
+                }
+            ],
+            "description": "A system of \"pipes\" for PHP.",
+            "time": "2019-12-07T20:43:33+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
