@@ -1,0 +1,5 @@
+{
+	"require": {
+		"elvenspellmaker/pipesys": "^2.0"
+	}
+}
